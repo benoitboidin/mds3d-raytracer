@@ -1,0 +1,3 @@
+[submodule "scenes"]
+	path = scenes
+	url = git@gitlab.emi.u-bordeaux.fr:mondes3d/raytracer-scenes.git
