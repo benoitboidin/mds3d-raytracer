@@ -10,17 +10,20 @@ Sphere::Sphere(const PropertyList &propList) {
 void Sphere::intersect(const Ray &ray, Hit &hit) const {
   /// TODO: compute ray-sphere intersection
   // throw RTException("Sphere::intersect not implemented yet.");
-  float delta = 2 * (ray.origin - m_center).dot(d) - 
-          4 * d.norm() * 
-          ((ray.origin - m_center).norm() - m_radius * m_radius); 
-  
-  printf("%f", delta);
 
-  // if (delta < 0){
-  //   return false;
-  // }else if (delta = 0){
-  //   return 
-  // }
+  printf("Center : %f %f %f \n", m_center.x(), m_center.y(), m_center.z());
+  printf("Ray origin : %f %f %f \n", ray.origin.x(), ray.origin.y(), ray.origin.z());
+  printf("Ray direction : %f %f %f \n", ray.direction.x(), ray.direction.y(), ray.direction.z());
+
+  float delta = 2 * (ray.origin - m_center).dot(ray.direction) - 
+          4 * ray.direction.norm() * 
+          ((ray.origin - m_center).norm() - m_radius * m_radius); 
+
+  if (delta != 0){
+    hit.t = delta; // Not sure about this...
+    hit.shape = this;
+  }
+  printf("Delta : %f \n", delta);
 }
 
 REGISTER_CLASS(Sphere, "sphere")

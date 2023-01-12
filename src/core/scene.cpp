@@ -37,7 +37,7 @@ void Scene::intersect(const Ray &ray, Hit &hit) const {
   /// TODO: iterate on the object list and test for intersection
   ///       => if any, keep the closest one
   for(size_t i = 0; i < m_shapeList.size(); i++){
-    Hit hit2;
+    Hit hit2
     m_shapeList[i]->intersect(ray, hit2);
     if(hit2.foundIntersection() && hit2.t < hit.t){
       hit = hit2;

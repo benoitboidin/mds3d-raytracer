@@ -291,6 +291,16 @@ void Viewer::render(Scene *scene, ImageBlock *result, bool *done) {
   ///  3. call the integartor to compute the color along this ray
   ///  4. write this color in the result image (ImageBlock::put)
 
+  for (int y = 0; y < 1; y++) { // camera->outputSize().y()
+    for (int x = 0; x < 1; x++) { // camera->outputSize().x()
+      Ray ray;
+      Color3f color = integrator->Li(scene, ray);
+      printf("%f \n", color.r());
+      printf("%f \n", color.g());
+      printf("%f \n", color.b());
+    }
+  }
+
   cout << "done. (took " << timer.elapsedString() << ")" << endl;
   *done = true;
 }

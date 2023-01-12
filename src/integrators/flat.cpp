@@ -10,7 +10,9 @@ public:
   Color3f Li(const Scene *scene, const Ray &ray) const {
      /** TODO : Find the surface that is visible in the requested direction
                    Return its ambiant color */
-    throw RTException("Flat::Li not implemented yet.");
+    // throw RTException("Flat::Li not implemented yet.");
+    Hit hit;
+    scene->intersect(ray, hit);
     return Color3f(0.f);
   }
 
