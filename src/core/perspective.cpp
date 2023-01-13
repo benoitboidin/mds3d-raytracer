@@ -46,7 +46,7 @@ public:
 
   void sampleRay(Ray &ray, const Point2f &samplePosition) const {
     // TODO: fill the position and direction of the ray
-    throw RTException("PerspectiveCamera::sampleRay not implemented yet.");
+    // throw RTException("PerspectiveCamera::sampleRay not implemented yet.");
     ray.origin = m_center;
     ray.direction = m_camF + m_camX * samplePosition.x() + m_camY * samplePosition.y();
     ray.direction.normalize();

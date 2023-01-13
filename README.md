@@ -5,3 +5,12 @@ Comamndes utiles :
 Notes : 
 
 Images : 
+
+
+Rayon
+Sphères 
+Plans 
+Éclairage
+Ombres
+Réglexions
+Rendu

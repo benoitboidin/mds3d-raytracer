@@ -19,11 +19,10 @@ void Sphere::intersect(const Ray &ray, Hit &hit) const {
           4 * ray.direction.norm() * 
           ((ray.origin - m_center).norm() - m_radius * m_radius); 
 
-  if (delta != 0){
-    hit.t = delta; // Not sure about this...
+  if (delta >= 0){
+    hit.t = (-2 * (ray.origin - m_center).dot(ray.direction) - sqrt(delta)) / (2 * ray.direction.norm());
     hit.shape = this;
   }
-  printf("Delta : %f \n", delta);
 }
 
 REGISTER_CLASS(Sphere, "sphere")
