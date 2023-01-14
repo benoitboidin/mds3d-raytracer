@@ -35,7 +35,9 @@ Color3f Scene::backgroundColor(const Vector3f &direction) const {
 /** Search for the nearest intersection between the ray and the object list */
 void Scene::intersect(const Ray &ray, Hit &hit) const {
   /// TODO: iterate on the object list and test for intersection
-  ///       => if any, keep the closest one
+  ///       => if any, keep the closest one 
+  // throw RTException("Scene::intersect not implemented yet.");
+  
   for(size_t i = 0; i < m_shapeList.size(); i++){
     Hit hit2;
     m_shapeList[i]->intersect(ray, hit2);
@@ -43,7 +45,6 @@ void Scene::intersect(const Ray &ray, Hit &hit) const {
       hit = hit2;
     }
   }
-  // throw RTException("Scene::intersect not implemented yet.");
 }
 
 void Scene::addChild(Object *obj) {

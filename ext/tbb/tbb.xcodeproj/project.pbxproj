@@ -1,0 +1,180 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXFileReference section */
+		EA67E59D2971AF9000B6BB73 /* third-party-programs.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "third-party-programs.txt"; sourceTree = "<group>"; };
+		EA67E59E2971AF9000B6BB73 /* index.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		EA67E59F2971AF9000B6BB73 /* CMakeLists.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = "<group>"; };
+		EA67E5A02971AF9000B6BB73 /* .DS_Store */ = {isa = PBXFileReference; lastKnownFileType = file; path = .DS_Store; sourceTree = "<group>"; };
+		EA67E5A12971AF9000B6BB73 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		EA67E5A22971AF9000B6BB73 /* cmake */ = {isa = PBXFileReference; lastKnownFileType = folder; path = cmake; sourceTree = "<group>"; };
+		EA67E5A32971AF9000B6BB73 /* python */ = {isa = PBXFileReference; lastKnownFileType = folder; path = python; sourceTree = "<group>"; };
+		EA67E5A42971AF9000B6BB73 /* CHANGES */ = {isa = PBXFileReference; lastKnownFileType = text; path = CHANGES; sourceTree = "<group>"; };
+		EA67E5A52971AF9000B6BB73 /* include */ = {isa = PBXFileReference; lastKnownFileType = folder; path = include; sourceTree = "<group>"; };
+		EA67E5A62971AF9000B6BB73 /* .appveyor.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .appveyor.yml; sourceTree = "<group>"; };
+		EA67E5A72971AF9000B6BB73 /* README */ = {isa = PBXFileReference; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		EA67E5A82971AF9000B6BB73 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		EA67E5A92971AF9000B6BB73 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		EA67E5AA2971AF9000B6BB73 /* examples */ = {isa = PBXFileReference; lastKnownFileType = folder; path = examples; sourceTree = "<group>"; };
+		EA67E5AB2971AF9000B6BB73 /* .gitattributes */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitattributes; sourceTree = "<group>"; };
+		EA67E5AC2971AF9000B6BB73 /* doc */ = {isa = PBXFileReference; lastKnownFileType = folder; path = doc; sourceTree = "<group>"; };
+		EA67E5AD2971AF9000B6BB73 /* Makefile.old */ = {isa = PBXFileReference; lastKnownFileType = text; path = Makefile.old; sourceTree = "<group>"; };
+		EA67E5AE2971AF9000B6BB73 /* build */ = {isa = PBXFileReference; lastKnownFileType = folder; path = build; sourceTree = "<group>"; };
+		EA67E5AF2971AF9000B6BB73 /* Doxyfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Doxyfile; sourceTree = "<group>"; };
+		EA67E5B02971AF9000B6BB73 /* jni */ = {isa = PBXFileReference; lastKnownFileType = folder; path = jni; sourceTree = "<group>"; };
+		EA67E5B12971AF9000B6BB73 /* .travis.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .travis.yml; sourceTree = "<group>"; };
+		EA67E5B22971AF9000B6BB73 /* src */ = {isa = PBXFileReference; lastKnownFileType = folder; path = src; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		EA67E5972971AF9000B6BB73 = {
+			isa = PBXGroup;
+			children = (
+				EA67E59D2971AF9000B6BB73 /* third-party-programs.txt */,
+				EA67E59E2971AF9000B6BB73 /* index.html */,
+				EA67E59F2971AF9000B6BB73 /* CMakeLists.txt */,
+				EA67E5A02971AF9000B6BB73 /* .DS_Store */,
+				EA67E5A12971AF9000B6BB73 /* LICENSE */,
+				EA67E5A22971AF9000B6BB73 /* cmake */,
+				EA67E5A32971AF9000B6BB73 /* python */,
+				EA67E5A42971AF9000B6BB73 /* CHANGES */,
+				EA67E5A52971AF9000B6BB73 /* include */,
+				EA67E5A62971AF9000B6BB73 /* .appveyor.yml */,
+				EA67E5A72971AF9000B6BB73 /* README */,
+				EA67E5A82971AF9000B6BB73 /* README.md */,
+				EA67E5A92971AF9000B6BB73 /* .gitignore */,
+				EA67E5AA2971AF9000B6BB73 /* examples */,
+				EA67E5AB2971AF9000B6BB73 /* .gitattributes */,
+				EA67E5AC2971AF9000B6BB73 /* doc */,
+				EA67E5AD2971AF9000B6BB73 /* Makefile.old */,
+				EA67E5AE2971AF9000B6BB73 /* build */,
+				EA67E5AF2971AF9000B6BB73 /* Doxyfile */,
+				EA67E5B02971AF9000B6BB73 /* jni */,
+				EA67E5B12971AF9000B6BB73 /* .travis.yml */,
+				EA67E5B22971AF9000B6BB73 /* src */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXLegacyTarget section */
+		EA67E59C2971AF9000B6BB73 /* tbb */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "$(ACTION)";
+			buildConfigurationList = EA67E5B32971AF9000B6BB73 /* Build configuration list for PBXLegacyTarget "tbb" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/bin/make;
+			buildWorkingDirectory = "/Users/benoitboidin/Desktop/s8_info/mondes_3d/mds3d-raytracer/ext/tbb";
+			dependencies = (
+			);
+			name = tbb;
+			passBuildSettingsInEnvironment = 1;
+			productName = tbb;
+		};
+/* End PBXLegacyTarget section */
+
+/* Begin PBXProject section */
+		EA67E5982971AF9000B6BB73 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+			};
+			buildConfigurationList = EA67E59B2971AF9000B6BB73 /* Build configuration list for PBXProject "tbb" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EA67E5972971AF9000B6BB73;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EA67E59C2971AF9000B6BB73 /* tbb */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin XCBuildConfiguration section */
+		EA67E5992971AF9000B6BB73 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx10.6;
+			};
+			name = Debug;
+		};
+		EA67E59A2971AF9000B6BB73 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				SDKROOT = macosx10.6;
+			};
+			name = Release;
+		};
+		EA67E5B42971AF9000B6BB73 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DEBUGGING_SYMBOLS = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = tbb;
+			};
+			name = Debug;
+		};
+		EA67E5B52971AF9000B6BB73 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = tbb;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EA67E59B2971AF9000B6BB73 /* Build configuration list for PBXProject "tbb" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA67E5992971AF9000B6BB73 /* Debug */,
+				EA67E59A2971AF9000B6BB73 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA67E5B32971AF9000B6BB73 /* Build configuration list for PBXLegacyTarget "tbb" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA67E5B42971AF9000B6BB73 /* Debug */,
+				EA67E5B52971AF9000B6BB73 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EA67E5982971AF9000B6BB73 /* Project object */;
+}

@@ -13,7 +13,11 @@ public:
     // throw RTException("Flat::Li not implemented yet.");
     Hit hit;
     scene->intersect(ray, hit);
-    return Color3f(0.f);
+    if(!hit.foundIntersection()){
+      return scene->backgroundColor(ray.direction);
+    }else{
+      return hit.shape->bsdf()->albedo();
+    }
   }
 
   std::string toString() const { return "FlatIntegrator[]"; }

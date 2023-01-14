@@ -1,0 +1,200 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXFileReference section */
+		EA67E5BC2971AF9000B6BB73 /* asakusa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = asakusa.png; sourceTree = "<group>"; };
+		EA67E5BD2971AF9000B6BB73 /* experimental */ = {isa = PBXFileReference; lastKnownFileType = folder; path = experimental; sourceTree = "<group>"; };
+		EA67E5BE2971AF9000B6BB73 /* tinyexr.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = tinyexr.cc; sourceTree = "<group>"; };
+		EA67E5BF2971AF9000B6BB73 /* .drone.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .drone.yml; sourceTree = "<group>"; };
+		EA67E5C02971AF9000B6BB73 /* CMakeLists.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = "<group>"; };
+		EA67E5C12971AF9000B6BB73 /* .DS_Store */ = {isa = PBXFileReference; lastKnownFileType = file; path = .DS_Store; sourceTree = "<group>"; };
+		EA67E5C22971AF9000B6BB73 /* test_tinyexr.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = test_tinyexr.cc; sourceTree = "<group>"; };
+		EA67E5C32971AF9000B6BB73 /* test */ = {isa = PBXFileReference; lastKnownFileType = folder; path = test; sourceTree = "<group>"; };
+		EA67E5C42971AF9000B6BB73 /* asakusa.exr */ = {isa = PBXFileReference; lastKnownFileType = file; path = asakusa.exr; sourceTree = "<group>"; };
+		EA67E5C52971AF9000B6BB73 /* cmake */ = {isa = PBXFileReference; lastKnownFileType = folder; path = cmake; sourceTree = "<group>"; };
+		EA67E5C62971AF9000B6BB73 /* config-msvc.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = "config-msvc.py"; sourceTree = "<group>"; };
+		EA67E5C72971AF9000B6BB73 /* Makefile */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		EA67E5C82971AF9000B6BB73 /* .lgtm.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .lgtm.yml; sourceTree = "<group>"; };
+		EA67E5C92971AF9000B6BB73 /* .gitmodules */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitmodules; sourceTree = "<group>"; };
+		EA67E5CA2971AF9000B6BB73 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		EA67E5CB2971AF9000B6BB73 /* appveyor.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = appveyor.yml; sourceTree = "<group>"; };
+		EA67E5CC2971AF9000B6BB73 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		EA67E5CD2971AF9000B6BB73 /* examples */ = {isa = PBXFileReference; lastKnownFileType = folder; path = examples; sourceTree = "<group>"; };
+		EA67E5CE2971AF9000B6BB73 /* Makefile.gcc-mingw-msys */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Makefile.gcc-mingw-msys"; sourceTree = "<group>"; };
+		EA67E5CF2971AF9000B6BB73 /* .clang-format */ = {isa = PBXFileReference; lastKnownFileType = text; path = ".clang-format"; sourceTree = "<group>"; };
+		EA67E5D02971AF9000B6BB73 /* .github */ = {isa = PBXFileReference; lastKnownFileType = folder; path = .github; sourceTree = "<group>"; };
+		EA67E5D12971AF9000B6BB73 /* deps */ = {isa = PBXFileReference; lastKnownFileType = folder; path = deps; sourceTree = "<group>"; };
+		EA67E5D22971AF9000B6BB73 /* premake4.lua */ = {isa = PBXFileReference; lastKnownFileType = text; path = premake4.lua; sourceTree = "<group>"; };
+		EA67E5D32971AF9000B6BB73 /* vcbuild.bat */ = {isa = PBXFileReference; lastKnownFileType = text; path = vcbuild.bat; sourceTree = "<group>"; };
+		EA67E5D42971AF9000B6BB73 /* transparent.exr */ = {isa = PBXFileReference; lastKnownFileType = file; path = transparent.exr; sourceTree = "<group>"; };
+		EA67E5D52971AF9000B6BB73 /* jni */ = {isa = PBXFileReference; lastKnownFileType = folder; path = jni; sourceTree = "<group>"; };
+		EA67E5D62971AF9000B6BB73 /* tinyexr.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tinyexr.h; sourceTree = "<group>"; };
+		EA67E5D72971AF9000B6BB73 /* kuroga.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = kuroga.py; sourceTree = "<group>"; };
+		EA67E5D82971AF9000B6BB73 /* Makefile.gcc-mingw */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Makefile.gcc-mingw"; sourceTree = "<group>"; };
+		EA67E5D92971AF9000B6BB73 /* Makefile.llvm-mingw */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Makefile.llvm-mingw"; sourceTree = "<group>"; };
+		EA67E5DA2971AF9000B6BB73 /* .travis.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .travis.yml; sourceTree = "<group>"; };
+		EA67E5DB2971AF9000B6BB73 /* vcsetup2019.bat */ = {isa = PBXFileReference; lastKnownFileType = text; path = vcsetup2019.bat; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		EA67E5B62971AF9000B6BB73 = {
+			isa = PBXGroup;
+			children = (
+				EA67E5BC2971AF9000B6BB73 /* asakusa.png */,
+				EA67E5BD2971AF9000B6BB73 /* experimental */,
+				EA67E5BE2971AF9000B6BB73 /* tinyexr.cc */,
+				EA67E5BF2971AF9000B6BB73 /* .drone.yml */,
+				EA67E5C02971AF9000B6BB73 /* CMakeLists.txt */,
+				EA67E5C12971AF9000B6BB73 /* .DS_Store */,
+				EA67E5C22971AF9000B6BB73 /* test_tinyexr.cc */,
+				EA67E5C32971AF9000B6BB73 /* test */,
+				EA67E5C42971AF9000B6BB73 /* asakusa.exr */,
+				EA67E5C52971AF9000B6BB73 /* cmake */,
+				EA67E5C62971AF9000B6BB73 /* config-msvc.py */,
+				EA67E5C72971AF9000B6BB73 /* Makefile */,
+				EA67E5C82971AF9000B6BB73 /* .lgtm.yml */,
+				EA67E5C92971AF9000B6BB73 /* .gitmodules */,
+				EA67E5CA2971AF9000B6BB73 /* README.md */,
+				EA67E5CB2971AF9000B6BB73 /* appveyor.yml */,
+				EA67E5CC2971AF9000B6BB73 /* .gitignore */,
+				EA67E5CD2971AF9000B6BB73 /* examples */,
+				EA67E5CE2971AF9000B6BB73 /* Makefile.gcc-mingw-msys */,
+				EA67E5CF2971AF9000B6BB73 /* .clang-format */,
+				EA67E5D02971AF9000B6BB73 /* .github */,
+				EA67E5D12971AF9000B6BB73 /* deps */,
+				EA67E5D22971AF9000B6BB73 /* premake4.lua */,
+				EA67E5D32971AF9000B6BB73 /* vcbuild.bat */,
+				EA67E5D42971AF9000B6BB73 /* transparent.exr */,
+				EA67E5D52971AF9000B6BB73 /* jni */,
+				EA67E5D62971AF9000B6BB73 /* tinyexr.h */,
+				EA67E5D72971AF9000B6BB73 /* kuroga.py */,
+				EA67E5D82971AF9000B6BB73 /* Makefile.gcc-mingw */,
+				EA67E5D92971AF9000B6BB73 /* Makefile.llvm-mingw */,
+				EA67E5DA2971AF9000B6BB73 /* .travis.yml */,
+				EA67E5DB2971AF9000B6BB73 /* vcsetup2019.bat */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXLegacyTarget section */
+		EA67E5BB2971AF9000B6BB73 /* tinyexr */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "$(ACTION)";
+			buildConfigurationList = EA67E5DC2971AF9000B6BB73 /* Build configuration list for PBXLegacyTarget "tinyexr" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/bin/make;
+			buildWorkingDirectory = "/Users/benoitboidin/Desktop/s8_info/mondes_3d/mds3d-raytracer/ext/tinyexr";
+			dependencies = (
+			);
+			name = tinyexr;
+			passBuildSettingsInEnvironment = 1;
+			productName = tinyexr;
+		};
+/* End PBXLegacyTarget section */
+
+/* Begin PBXProject section */
+		EA67E5B72971AF9000B6BB73 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+			};
+			buildConfigurationList = EA67E5BA2971AF9000B6BB73 /* Build configuration list for PBXProject "tinyexr" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EA67E5B62971AF9000B6BB73;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EA67E5BB2971AF9000B6BB73 /* tinyexr */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin XCBuildConfiguration section */
+		EA67E5B82971AF9000B6BB73 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx10.6;
+			};
+			name = Debug;
+		};
+		EA67E5B92971AF9000B6BB73 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				SDKROOT = macosx10.6;
+			};
+			name = Release;
+		};
+		EA67E5DD2971AF9000B6BB73 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DEBUGGING_SYMBOLS = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = tinyexr;
+			};
+			name = Debug;
+		};
+		EA67E5DE2971AF9000B6BB73 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = tinyexr;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EA67E5BA2971AF9000B6BB73 /* Build configuration list for PBXProject "tinyexr" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA67E5B82971AF9000B6BB73 /* Debug */,
+				EA67E5B92971AF9000B6BB73 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA67E5DC2971AF9000B6BB73 /* Build configuration list for PBXLegacyTarget "tinyexr" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA67E5DD2971AF9000B6BB73 /* Debug */,
+				EA67E5DE2971AF9000B6BB73 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EA67E5B72971AF9000B6BB73 /* Project object */;
+}

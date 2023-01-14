@@ -1,0 +1,160 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXFileReference section */
+		EA67E5882971AF9000B6BB73 /* Jamrules.jam */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.jam; path = Jamrules.jam; sourceTree = "<group>"; };
+		EA67E5892971AF9000B6BB73 /* .DS_Store */ = {isa = PBXFileReference; lastKnownFileType = file; path = .DS_Store; sourceTree = "<group>"; };
+		EA67E58A2971AF9000B6BB73 /* Makefile */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		EA67E58B2971AF9000B6BB73 /* tests */ = {isa = PBXFileReference; lastKnownFileType = folder; path = tests; sourceTree = "<group>"; };
+		EA67E58C2971AF9000B6BB73 /* docs */ = {isa = PBXFileReference; lastKnownFileType = folder; path = docs; sourceTree = "<group>"; };
+		EA67E58D2971AF9000B6BB73 /* contrib */ = {isa = PBXFileReference; lastKnownFileType = folder; path = contrib; sourceTree = "<group>"; };
+		EA67E58E2971AF9000B6BB73 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		EA67E58F2971AF9000B6BB73 /* scripts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = scripts; sourceTree = "<group>"; };
+		EA67E5902971AF9000B6BB73 /* Jamfile.jam */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.jam; path = Jamfile.jam; sourceTree = "<group>"; };
+		EA67E5912971AF9000B6BB73 /* readme.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = readme.txt; sourceTree = "<group>"; };
+		EA67E5922971AF9000B6BB73 /* .travis.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .travis.yml; sourceTree = "<group>"; };
+		EA67E5932971AF9000B6BB73 /* src */ = {isa = PBXFileReference; lastKnownFileType = folder; path = src; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		EA67E5822971AF9000B6BB73 = {
+			isa = PBXGroup;
+			children = (
+				EA67E5882971AF9000B6BB73 /* Jamrules.jam */,
+				EA67E5892971AF9000B6BB73 /* .DS_Store */,
+				EA67E58A2971AF9000B6BB73 /* Makefile */,
+				EA67E58B2971AF9000B6BB73 /* tests */,
+				EA67E58C2971AF9000B6BB73 /* docs */,
+				EA67E58D2971AF9000B6BB73 /* contrib */,
+				EA67E58E2971AF9000B6BB73 /* README.md */,
+				EA67E58F2971AF9000B6BB73 /* scripts */,
+				EA67E5902971AF9000B6BB73 /* Jamfile.jam */,
+				EA67E5912971AF9000B6BB73 /* readme.txt */,
+				EA67E5922971AF9000B6BB73 /* .travis.yml */,
+				EA67E5932971AF9000B6BB73 /* src */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXLegacyTarget section */
+		EA67E5872971AF9000B6BB73 /* pugixml */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "$(ACTION)";
+			buildConfigurationList = EA67E5942971AF9000B6BB73 /* Build configuration list for PBXLegacyTarget "pugixml" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/bin/make;
+			buildWorkingDirectory = "/Users/benoitboidin/Desktop/s8_info/mondes_3d/mds3d-raytracer/ext/pugixml";
+			dependencies = (
+			);
+			name = pugixml;
+			passBuildSettingsInEnvironment = 1;
+			productName = pugixml;
+		};
+/* End PBXLegacyTarget section */
+
+/* Begin PBXProject section */
+		EA67E5832971AF9000B6BB73 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+			};
+			buildConfigurationList = EA67E5862971AF9000B6BB73 /* Build configuration list for PBXProject "pugixml" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EA67E5822971AF9000B6BB73;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EA67E5872971AF9000B6BB73 /* pugixml */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin XCBuildConfiguration section */
+		EA67E5842971AF9000B6BB73 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx10.6;
+			};
+			name = Debug;
+		};
+		EA67E5852971AF9000B6BB73 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				SDKROOT = macosx10.6;
+			};
+			name = Release;
+		};
+		EA67E5952971AF9000B6BB73 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DEBUGGING_SYMBOLS = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = pugixml;
+			};
+			name = Debug;
+		};
+		EA67E5962971AF9000B6BB73 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = pugixml;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EA67E5862971AF9000B6BB73 /* Build configuration list for PBXProject "pugixml" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA67E5842971AF9000B6BB73 /* Debug */,
+				EA67E5852971AF9000B6BB73 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA67E5942971AF9000B6BB73 /* Build configuration list for PBXLegacyTarget "pugixml" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA67E5952971AF9000B6BB73 /* Debug */,
+				EA67E5962971AF9000B6BB73 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EA67E5832971AF9000B6BB73 /* Project object */;
+}
