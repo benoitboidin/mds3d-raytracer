@@ -10,10 +10,14 @@ Sphere::Sphere(const PropertyList &propList) {
 void Sphere::intersect(const Ray &ray, Hit &hit) const {
   /// TODO: compute ray-sphere intersection
   // throw RTException("Sphere::intersect not implemented yet.");
-  
-  float delta = 2 * (ray.origin - m_center).dot(ray.direction) - 
-          4 * ray.direction.norm() * 
-          ((ray.origin - m_center).norm() - m_radius * m_radius); 
+
+  // First try : 
+  // float delta = 2 * (ray.origin - m_center).dot(ray.direction) - 
+  //         4 * ray.direction.norm() * ((ray.origin - m_center).norm() - m_radius * m_radius); 
+
+  // Copilot suggestion : (fonctionne : fait des Hit donc delta >= 0)
+  float delta = (2 * (ray.origin - m_center).dot(ray.direction)) * (2 * (ray.origin - m_center).dot(ray.direction)) - 
+                4 * (ray.direction.norm() * ray.direction.norm()) * ((ray.origin - m_center).norm() - m_radius * m_radius);
 
   if (delta >= 0){
     hit.t = (-2 * (ray.origin - m_center).dot(ray.direction) - sqrt(delta)) / (2 * ray.direction.norm());
