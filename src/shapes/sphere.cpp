@@ -56,9 +56,12 @@ void Sphere::intersect(const Ray &ray, Hit &hit) const {
   }else{
     float t1 = (-b - sqrt(delta)) / (2 * a);
     float t2 = (-b + sqrt(delta)) / (2 * a);
-    hit.t = std::min(t1, t2);
-    hit.shape = this;
-    hit.normal = (ray.at(hit.t) - m_center).normalized();
+    float t = std::min(t1, t2);
+    if (t > 0){ 
+      hit.t = t;
+      hit.shape = this;
+      hit.normal = (ray.at(hit.t) - m_center).normalized();
+    }
   }
 }
 

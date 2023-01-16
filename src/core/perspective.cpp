@@ -49,7 +49,7 @@ public:
     // throw RTException("PerspectiveCamera::sampleRay not implemented yet.");
     
     ray.origin = m_center;
-    ray.direction = m_camF + m_camX * samplePosition.x() + m_camY * samplePosition.y() - m_center;
+    ray.direction = m_camF + m_camX * samplePosition.x() - m_camY * samplePosition.y();
     ray.direction.normalize();
   }
 
