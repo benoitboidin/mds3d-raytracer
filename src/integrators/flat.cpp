@@ -11,12 +11,12 @@ public:
      /** TODO : Find the surface that is visible in the requested direction
                    Return its ambiant color */
     // throw RTException("Flat::Li not implemented yet.");
-    Hit hit;
+    Hit hit = Hit();
     scene->intersect(ray, hit);
-    if(!hit.foundIntersection()){
-      return scene->backgroundColor(ray.direction);
+    if(hit.foundIntersection()){
+      return hit.shape->bsdf()->albedo(); 
     }else{
-      return hit.shape->bsdf()->albedo();
+      return scene->backgroundColor(ray.direction);
     }
   }
 

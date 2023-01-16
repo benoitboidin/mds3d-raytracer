@@ -291,18 +291,13 @@ void Viewer::render(Scene *scene, ImageBlock *result, bool *done) {
   ///  3. call the integartor to compute the color along this ray
   ///  4. write this color in the result image (ImageBlock::put)
 
-  printf("camera->outputSize().x() = %d", camera->outputSize().x());
 
   for (int y = 0; y < camera->outputSize().y(); y++) {
     for (int x = 0; x < camera->outputSize().x(); x++) { 
-
-      Ray ray;
-      camera->sampleRay(ray, Point2f(x, y));
-    
-      Color3f color = integrator->Li(scene, ray);
-      // Il faut utiliser la méthode : void ImageBlock::put(const Vector2f &_pos, const Color3f &value)
-      result->put(Point2f(x, y), color);
-      
+      Ray ray = Ray();
+      Color3f color;
+      camera->sampleRay(ray, Point2f(x / camera->outputSize().x(), y / camera->outputSize().y()));
+      result->put(Point2f(x, y), integrator->Li(scene, ray));
     }
   }
 

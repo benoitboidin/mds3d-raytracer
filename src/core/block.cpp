@@ -1,5 +1,5 @@
 /*
-    This file is part of Nori, a simple educational ray tracer
+    This file is part of s, a simple educational ray tracer
 
     Copyright (c) 2015 by Wenzel Jakob
 */
@@ -41,9 +41,16 @@ void ImageBlock::put(const Point2f &_pos, const Color3f &value) {
     }
 
     /* Convert to pixel coordinates within the image block */
+    // Point2f pos(
+    //     _pos.x() - 0.5f - (m_offset.x() - m_borderSize),
+    //     _pos.y() - 0.5f - (m_offset.y() - m_borderSize)
+    // );
+
+
+    // New code without mistake (mail from Pierre Bénard)
     Point2f pos(
-        _pos.x() - 0.5f - (m_offset.x() - m_borderSize),
-        _pos.y() - 0.5f - (m_offset.y() - m_borderSize)
+        _pos.x() - (m_offset.x() - m_borderSize),
+        _pos.y() - (m_offset.y() - m_borderSize)
     );
 
     for (int y=(int)std::floor(pos.y()); y<=(int)std::ceil(pos.y()); ++y)

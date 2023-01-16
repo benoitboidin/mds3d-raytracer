@@ -37,15 +37,22 @@ void Scene::intersect(const Ray &ray, Hit &hit) const {
   /// TODO: iterate on the object list and test for intersection
   ///       => if any, keep the closest one 
   // throw RTException("Scene::intersect not implemented yet.");
-  
-  for(size_t i = 0; i < m_shapeList.size(); i++){
-    Hit hit2;
-    m_shapeList[i]->intersect(ray, hit2);
-    if(hit2.foundIntersection() && hit2.t < hit.t){
-      hit = hit2;
+  for (size_t i = 0; i < m_shapeList.size(); ++i) {
+    Hit tempHit;
+    m_shapeList[i]->intersect(ray, tempHit);
+    if(tempHit.t < hit.t){
+      hit = tempHit;
     }
   }
 }
+
+  // for(size_t i = 0; i < m_shapeList.size(); i++){
+  //   Hit hit2;
+  //   m_shapeList[i]->intersect(ray, hit2);
+  //   if(hit2.foundIntersection() && hit2.t < hit.t){
+  //     hit = hit2;
+  //   }
+  // }
 
 void Scene::addChild(Object *obj) {
   switch (obj->getClassType()) {
