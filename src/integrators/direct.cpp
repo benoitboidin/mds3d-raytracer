@@ -9,6 +9,7 @@ public:
 
   Color3f Li(const Scene *scene, const Ray &ray) const {
     Hit hit = Hit();
+    Ray direction = Ray();
     scene->intersect(ray, hit);
     if(hit.foundIntersection()){
       // normale
@@ -16,23 +17,20 @@ public:
 
       // point d'intersection
       Vector3f p = ray.at(hit.t);
-      
-      // matériau
-      Color3f phong = hit.shape->bsdf()->eval(ray.direction, n, p); 
 
       // couleur
       Color3f color = Color3f(0,0,0);
       
-    
       for(size_t i = 0; i < scene->lightList().size(); i++){
         
+        Vector3f lightdir;
+        float dist;
+        Color3f intensity = scene->lightList()[i]->intensity(p, lightdir, dist);
+
+        Color3f phong = hit.shape->bsdf()->eval(lightdir, ray.direction, n); 
         // intensité de la lampe
-        Color3f intensity = scene->lightList()[i]->intensity(p, hit.normal, hit.t);
         
-        // direction de la lampe
-        Vector3f lightDir = 
-        
-        color += std::max(intensity.dot(n), 0.f);
+        color += std::max(lightdir.dot(n), 0.f) * intensity * phong;
       }
       return color;
 

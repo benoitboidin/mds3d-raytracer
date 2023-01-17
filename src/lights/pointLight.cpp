@@ -10,8 +10,11 @@ public:
   Color3f intensity(const Point3f &x, Vector3f &wi, float &dist) const {
     /// TODO: compute the light intensity received at point x,
     /// the normalized direction wi and distance between x and the ligth center
-    throw RTException("PointLight::intensity not implemented yet.");
-    return Color3f(0.f);
+    // throw RTException("PointLight::intensity not implemented yet.");
+    wi = (m_position - x).normalized();
+    dist = (m_position - x).norm();
+    return m_intensity / (dist * dist);
+    // return Color3f(0.f);
   }
 
   std::string toString() const {
