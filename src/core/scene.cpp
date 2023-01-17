@@ -46,14 +46,6 @@ void Scene::intersect(const Ray &ray, Hit &hit) const {
   }
 }
 
-  // for(size_t i = 0; i < m_shapeList.size(); i++){
-  //   Hit hit2;
-  //   m_shapeList[i]->intersect(ray, hit2);
-  //   if(hit2.foundIntersection() && hit2.t < hit.t){
-  //     hit = hit2;
-  //   }
-  // }
-
 void Scene::addChild(Object *obj) {
   switch (obj->getClassType()) {
   case EShape: {

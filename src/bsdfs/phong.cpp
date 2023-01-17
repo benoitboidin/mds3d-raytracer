@@ -28,8 +28,14 @@ public:
   Color3f eval(const Vector3f &wi, const Vector3f &wo,
                const Normal3f &n) const {
     /// TODO: implement Phong BRDF
-    throw RTException("Phong::eval not implemented yet.");
-    return Color3f(0.f);
+    // throw RTException("Phong::eval not implemented yet.");
+
+    // Not sure about this...
+    Vector3f h = (wi + wo).normalized();
+    float cosTheta = std::max(0.f, h.dot(n));
+    return m_kd * INV_PI + m_ks * m_exponent * INV_TWOPI * std::pow(cosTheta, m_exponent);
+    
+    // return Color3f(0.f);
   }
 
   /// Return a human-readable summary
