@@ -31,9 +31,8 @@ void Sphere::intersect(const Ray &ray, Hit &hit) const {
   float b = 2 * dot;
   float c = xpn * xpn - m_radius * m_radius;
 
-
   float delta = b*b - 4 * a * c;
-  // cout << "Delta: " << delta << endl;
+
   if (delta == 0) {
     hit.t = - b / (2 * a);
     hit.shape = this;

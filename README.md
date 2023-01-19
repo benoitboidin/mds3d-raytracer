@@ -39,7 +39,6 @@
     }
   }
 ```
-<div style="page-break-after: always;"></div>
 
 ### 1.2. Sphères. 
 
@@ -57,7 +56,6 @@
 
   float delta = b*b - 4 * a * c;
 ```
-<div style="page-break-after: always;"></div>
 
 ### 1.3. Première image. 
 
@@ -77,8 +75,6 @@
 <p align="center">
     <img src="troisSpheres_flat.png" float="auto">
 </p>
-
-<div style="page-break-after: always;"></div>
 
 ### 1.4. Plans. 
 
@@ -107,8 +103,6 @@
     <img src="petanque_flat.png" float="auto">
 </p>
 
-<div style="page-break-after: always;"></div>
-
 ## 2. Éclairage local. 
 
 ### 2.1. Normales 
@@ -130,8 +124,6 @@
 <p align="center">
     <img src="troisSpheres_normal.png" float="auto">
 </p>
-
-<div style="page-break-after: always;"></div>
 
 ### 2.2. Calcul de l'éclairage. 
 

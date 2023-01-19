@@ -15,8 +15,6 @@ void Plane::intersect(const Ray &ray, Hit &hit) const {
   Vector3f n = m_normal;
   Point3f o = ray.origin;
 
-  // float equation = (o.dot(n) + a.dot(n)) + hit.t*(d.dot(n));
-
   if (d.dot(n) == 0) 
     return;
 
